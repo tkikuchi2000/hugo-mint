@@ -1,0 +1,13 @@
+<link rel="shortcut icon" type="image/png" href="{{ "img/favicon.png" | absURL }}" />
+<link rel="stylesheet" href="{{ "css/bulma.min.css" | absURL }}" />
+<link rel="stylesheet" href="{{ "css/icons.css" | absURL }}" />
+{{- if .Site.IsServer -}}
+{{- $coreCssUrl := printf "css/%s" (index .Site.Data.assetHashes "core.css") | absURL }}
+{{- $customCssUrl := printf "css/%s" (index .Site.Data.assetHashesCustom "custom.css") | absURL }}
+<link rel="stylesheet" href="{{ $coreCssUrl }}" />
+<link rel="stylesheet" href="{{ $customCssUrl }}" />
+{{- else }}
+<link rel="stylesheet" href="{{ "css/core.css" | absURL }}" />
+<link rel="stylesheet" href="{{ "css/custom.css" | absURL }}" />
+{{- end }}
+<link rel="stylesheet" href="{{ "css/style.css" | absURL }}" />

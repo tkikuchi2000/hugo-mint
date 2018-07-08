@@ -1,0 +1,18 @@
+/* ==========================================================================
+Section Navbar
+========================================================================== */
+.navbar {
+  box-shadow: unset;
+
+  .brand {
+    margin-right: 4px;
+    border-radius: 50%;
+    height: 48px;
+    max-height: 50px !important;
+    position: initial;
+  }
+
+  .title {
+    font-weight: 600;
+  }
+}

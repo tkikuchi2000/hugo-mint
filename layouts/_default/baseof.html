@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{ partial "meta.html" . }}
+    <title>{{ .Site.Title }}</title>
+    {{ partial "css.html" . }}
+  </head>
+  <body>
+    {{ block "main" . }}
+    {{ partial "preloader.html" . }}
+    {{ partial "hero.html" . }}
+    <!-- {{ partial "features.html" . }} -->
+    {{ partial "selling-points.html" . }}
+    {{ partial "getstarted.html" . }}
+    {{ partial "footer.html" . }}
+
+    <!-- Back-to-top button -->
+    <div id="backtotop"><a href="#"></a></div>
+
+    {{ end }}
+
+    {{ partial "javascript.html" . }}
+  </body>
+</html>

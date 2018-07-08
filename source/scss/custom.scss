@@ -1,0 +1,62 @@
+/* ==========================================================================
+Main SCSS file / Custom
+========================================================================== */
+
+// Custom Color variables
+$primary-mint: #dc416a;
+$secondary-mint: #bb2a53;
+
+//Color variables
+$white: #fff;
+$smoke-white: #fcfcfc;
+$grey-white: #f2f2f2;
+$primary: #4FC1EA;
+$secondary: #F39200;
+$accent: #68BB88;
+$fade-grey: #ededed;
+$light-grey: #EFF4F7;
+$title-grey: #A9ABAC;
+$blue-grey: #444F60;
+$light-blue-grey: #98a9c3;
+$medium-grey: #66676b;
+$basaltic-grey: #878787;
+$purple: #7F00FF;
+$mint: #11FFBD;
+$bloody: #FC354C;
+$pinky: #ff00cc;
+$frost: #004e92;
+$placeholder: #cecece;
+$dark-grey: #344258;
+$border-grey: #ccc;
+$muted-grey: #999;
+$section-grey: #fbfbfb;
+
+//Imports
+@import 'navbar';
+// @import 'dropdowns';
+@import 'sections';
+@import 'hero';
+@import 'getstarted';
+@import 'selling-points';
+@import 'footer';
+@import 'buttons';
+// @import 'cards';
+// @import 'forms';
+// @import 'animations';
+// @import 'sidebar';
+// @import 'testimonials';
+// @import 'responsive';
+
+
+// Back to top button
+#backtotop.visible a:hover {
+    outline: none;
+    opacity: 0.9;
+    background: $primary-mint;
+}
+
+.big-title {
+    color: $white;
+    font-size: 4.8rem;
+    font-weight: 700;
+}

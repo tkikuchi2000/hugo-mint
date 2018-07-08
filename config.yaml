@@ -1,0 +1,103 @@
+baseURL: http://example.org/
+languageCode: jp
+title: Mint
+theme: hugo-fresh
+
+
+params:
+  hero:
+    tagline: MINT
+    subTagline: For All Cyclists.
+    button:
+      text: DOWNLOAD IT HERE!
+      link: /#getstarted
+    image: app-image.png
+    bottomIcons:
+    - src: logos/thinkledge-logo.png
+      url: https://www.thinkledge.jp/
+    stores:
+    - urlJa: https://itunes.apple.com/jp/app/mint-gps%E3%82%B5%E3%82%A4%E3%82%AF%E3%83%AA%E3%83%B3%E3%82%B0%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF/id1159688042?mt=8
+      url: https://itunes.apple.com/app/gps-cycling-mint-speed-cadence/id1159688042?mt=8
+      image: App_Store_US_135x40.svg
+      alt: 'Download from App Store'
+    #- urlJa: /
+    #  urlUs: /
+    #  image: google-play-badge.png
+    #  alt: 'Download from Google Play'
+
+  navbar:
+    #buttonText: Sign up
+    logo:
+      src: logos/app-icon.jpg
+      alt: Main navbar logo
+      title: MINT
+    links:
+    - text: Features
+      url: /#selling-points
+    - text: Download
+      url: /#getstarted
+    #- text: Dropdown
+    #  dropdown: true
+    #  links:
+    #  - Dropdown item 1
+    #  - Dropdown item 2
+    #  - Dropdown item 3
+  sellingPoints:
+    tagline: Your best GPS cycling computer with your ride.
+    points:
+    - title: Current Location
+      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+      icon: map-marker
+    - title: Speed and Cadence Sensor
+      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+      icon: tachometer
+    - title: BLE Connect
+      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+      icon: bluetooth-b
+  getStarted:
+    tagline: Start using the app today!
+    subTagline: Download now to get started!
+    clientExamples:
+    - url: https://itunes.apple.com/app/gps-cycling-mint-speed-cadence/id1159688042?mt=8
+      image: App_Store_US_135x40.svg
+    stores:
+    - urlJa: https://itunes.apple.com/jp/app/mint-gps%E3%82%B5%E3%82%A4%E3%82%AF%E3%83%AA%E3%83%B3%E3%82%B0%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF/id1159688042?mt=8
+      urlUs: https://itunes.apple.com/app/gps-cycling-mint-speed-cadence/id1159688042?mt=8
+      image: App_Store_US_135x40.svg
+      alt: 'Download from App Store'
+    #- urlJa: /
+    #  urlUs: /
+    #  image: google-play-badge.png
+    #  alt: 'Download from Google Play'
+  footer:
+    image: 
+      src: app-icon.jpg
+      title: MINT
+    columns:
+    - title: Product
+      links:
+      - name: Features
+        url: "#features"
+      - name: Compatibility
+        url: "#selling-points"
+      - name: App Store (jp)
+        url: https://itunes.apple.com/jp/app/mint-gps%E3%82%B5%E3%82%A4%E3%82%AF%E3%83%AA%E3%83%B3%E3%82%B0%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF/id1159688042?mt=8
+      - name: App Store (others)
+        url: https://itunes.apple.com/app/gps-cycling-mint-speed-cadence/id1159688042?mt=8
+      #- name: Google Play
+      #  url: "#"
+    - title: Company
+      links:
+      - name: About Us
+        url: "http://thinkledge.jp/"
+      - name: Privacy
+        url: "http://thinkledge.jp/privacypolicy_english"
+    followUs:
+    - icon: facebook
+      url: "https://www.facebook.com/thinkledge/"
+    - icon: twitter
+      url: "https://twitter.com/lucperkins"
+    - icon: tumblr
+      url: "https://thinkledge.tumblr.com/"
+    copyright: '© 2018 Thinkledge, Inc.'
+

@@ -1,0 +1,24 @@
+{{- $getStarted := .Site.Params.getStarted -}}
+{{- $tagline := $getStarted.tagline -}}
+{{- $subTagline := $getStarted.subTagline -}}
+{{- $clientExamples := $getStarted.clientExamples -}}
+<section id="getstarted" class="getstarted section is-medium section-primary-mint">
+  <div class="container">
+    <div class="title-wrapper pb-40">
+      <h2 class="title is-2 section-title has-text-centered light-text pb-20">
+        {{ $tagline }}
+      </h2>
+      <h3 class="subtitle is-5 has-text-centered light-text">
+        {{ $subTagline }}
+      </h3>
+    </div>
+
+    <div class="columns is-vcentered mt-40">
+      {{- range $clientExamples -}}
+      <div class="column">
+        <img src="{{ printf "img/%s" .image | absURL }}" alt="{{ .alt }}" width="190"/>
+      </div>
+      {{- end -}}
+    </div>
+  </div>
+</section>

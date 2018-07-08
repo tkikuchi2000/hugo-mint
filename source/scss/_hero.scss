@@ -1,0 +1,26 @@
+/* ==========================================================================
+Section Hero
+========================================================================== */
+.hero {
+  .hero-body {
+    // background-image: url(http://thinkledge.jp/wp-content/uploads/2017/09/mintappthum_2_ver2.png); 
+    // background-color: $primary-mint;
+  
+    .big-title {
+      color: $primary-mint;
+    }
+    .subtitle {
+      color: $blue-grey;
+      font-size: 2rem !important;
+    }
+  }
+
+  .hero-foot {
+    background: $blue-grey;
+
+    .partner-logo {
+      width: 200px;
+      height: 37px;
+    }
+  }
+}

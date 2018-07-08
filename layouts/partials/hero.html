@@ -1,0 +1,66 @@
+{{- $hero := .Site.Params.hero }}
+{{- $tagline := $hero.tagline -}}
+{{- $subTagline := $hero.subtagline -}}
+{{- $button := $hero.button -}}
+{{- $heroImageUrl := printf "img/%s" $hero.image | absURL -}}
+{{- $stores := $hero.stores -}}
+<section class="hero is-fullheight is-default is-bold is-slanted section-light-grey">
+  {{ partial "navbar.html" . }}
+
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <div class="columns is-vcentered" style="padding-top:60px;">
+        <div class="column is-4 is-offset-1 has-text-left">
+          <h1 class="big-title">
+            {{ $tagline }}
+          </h1>
+          {{- with $subTagline -}}
+          <h2 class="subtitle is-5">
+            {{ . }}
+          </h2>
+          {{- end -}}
+          <br>
+          {{- with $button -}}
+          <p class="has-text-left">
+            <a class="button cta is-large rounded primary-mint-btn raised" href="{{ .link }}">
+              {{ .text }}
+            </a>
+          </p>
+          {{- end -}} 
+          <!-- <div class="columns">
+            {{- range $stores -}}
+            {{- $image := printf "img/%s" .image | absURL -}}
+            <div class="column">
+              <a href="{{ .url }}" target="_blank">
+                <img src="{{ $image }}" alt="{{ .alt }}" width="190">
+              </a>
+            </div>
+            {{- end -}}
+          </div> -->
+        </div>
+        <div class="column is-5 is-offset-2">
+          <figure class="image is-4by4">
+            <img src="{{ $heroImageUrl }}" alt="Description">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="hero-foot mb-20">
+    <div class="container">
+      <div class="tabs is-centered">
+        <ul>
+          {{- range $hero.bottomIcons -}}
+          {{- $imgUrl := printf "img/%s" .src }}
+          <li>
+            <a href="{{ .url }}" target="_blank">
+              <img class="partner-logo" src="{{ $imgUrl }}">
+            </a>
+          </li>
+          {{- end -}}
+        </ul>
+      </div>
+    </div>
+  </div> -->
+</section>

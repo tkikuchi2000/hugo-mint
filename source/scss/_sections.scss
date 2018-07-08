@@ -1,0 +1,12 @@
+/* ==========================================================================
+Section Styles
+========================================================================== */
+
+.section {
+    &.section-mint {
+        background-color: $mint;
+    }
+    &.section-primary-mint {
+        background-color: $primary-mint;
+    }
+}

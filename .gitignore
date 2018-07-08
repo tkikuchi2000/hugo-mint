@@ -1,0 +1,4 @@
+data/assetHashes.json
+node_modules/
+static/css/custom-*.css
+static/js/custom-*.js
