@@ -1,7 +1,8 @@
-baseURL: http://example.org/
-languageCode: jp
+baseURL: https://tkikuchi2000.github.io/hugo-fresh/
+languageCode: ja-jp
 title: Mint
 theme: hugo-fresh
+canonifyurls: true
 
 
 params:
